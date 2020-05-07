@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Overview OCC - Da teoria ao fluxo de criação de widgets</title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Tobias Rocha da Rosa">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Overview OCC - Da teoria ao fluxo de criação de widgets</h2>
+					<img class="img-index" src="assets/img/oracle-image.png">
+					<p>
+						<small>Tobias Rocha da Rosa</small>
+					</p>
+				</section>
+				<section>
+					<h2>
+						Olá, eu sou o Tobias 
+						<img class="icon-hello" src="assets/img/02.png">
+					</h2>
+					<ul>
+						<li>Desenvolvedor front-end +- 8 anos</li>
+						<li>Trabalho na compasso há 4 anos</li>
+						<li>Trabalho com OCC há 2 anos</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Projetos que já trabalhei na Compasso</h2>
+					<img src="assets/img/work.png">
+				</section>
+				<section>
+					<h2>Roteiro do webinar</h2>
+					<ul>
+						<li class="fragment">A Plataforma OCC - Conceitos</li>
+						<li class="fragment">Como funciona o front end no OCC</li>
+						<li class="fragment">Fluxo de criação de widgets</li>
+						<li class="fragment">Criando um layout de página e instanciando widgets</li>
+						<li class="fragment">Fluxo de manutenção de widgets</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Perguntas e participações são bem-vindas!</h2>
+				</section>
+				<section>
+					<h2>A Plataforma OCC (CX Commerce)</h2>
+					<p class="fragment">O Oracle Commerce Cloud é uma solução de comércio de SaaS extensível e abrangente que oferece suporte aos modelos B2C e B2B em uma plataforma unificada.</p>
+				</section>
+				<section>
+					<h2>Alguns dos serviços disponibilizados</h2>
+					<ul>
+						<li class="fragment">É uma ferramenta que permite multi-sites, multi-catálogos, multi-listas de preço e multi-moedas</li>
+						<li class="fragment">Pode comportar implementações B2B, B2C e marketplaces, simultaneamente.</li>
+						<li class="fragment">O Conteúdo pode ser gerenciado livremente através do uso de widgets.</li>
+						<li class="fragment">Possui nativamente funcionalidades de teste AB, BI e uma camada de pré-visualização (preview) em cada ambiente.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Como funciona a camada front end no OCC</h2>
+					<ul>
+						<li class="fragment">API First: Toda a funcionalidade é acessível através de serviços REST.</li>
+						<li class="fragment">A aplicação é baseada numa SPA que utiliza o framework KnockoutJS.</li>
+						<li class="fragment">Os layouts são construídos através de widgets.</li>
+						<li class="fragment">Tecnologias envolvidas: KnockoutJS, RequireJS, LESS, HTML5, CSS3, JS(ES5).</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Fluxo de criação de widgets</h2>
+					<ul>
+						<li class="fragment">Criar extensão</li>
+						<li class="fragment">Preparar arquivos de pré instalação</li>
+						<li class="fragment">Zipar arquivos</li>
+						<li class="fragment">Enviar zip para OCC</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Criando um layout de página e instanciando widgets</h2>
+					<ul>
+						<li class="fragment">Acessar o menu design - layouts.</li>
+						<li class="fragment">Copiar um layout padrão e fazer as configurações necessárias.</li>
+						<li class="fragment">Instanciar widgets (drag and drop).</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Fluxo de manutenção de widgets</h2>
+					<p>O OCC possui um Design Code Utility, que é um conjunto de ferramentas de linha de comando que permite integrar o Commerce Cloud à uma IDE ou editor de código.</p>
+					<ul>
+						<li class="fragment">DCU - Utilitário principal de sincronização de código.</li>
+						<li class="fragment">CCPROXY - O proxy de desenvolvimento e depuração.</li>
+						<li class="fragment">CCW - O Assistente para criação de conteúdo.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Perguntas</h2>
+				</section>
+				<section>
+                    <h2>Obrigado!</h2>
+                    <p>Email: tobias.rosa@compasso.com.br</p>
+                    <p>Skype: tobias_rocha101@hotmail.com</p>
+                </section>
+			</div>
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', 
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/search/search.js', async: true },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
